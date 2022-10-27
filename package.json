@@ -1,0 +1,30 @@
+{
+  "name": "notifications-page-main",
+  "version": "1.0.0",
+  "description": "page of notifiations",
+  "main": "index.js",
+  "scripts": {
+    "css": "npx tailwindcss -i ./dist/input.css -o ./src/style.css --watch",
+    "css1": "npx tailwindcss -i ./dist/input.css -o ./src/style.css --minify",
+    "html": "pug ./dist/index.pug -o ./src/ -w -P",
+    "html1": "pug ./dist/index.pug -o ./src/ -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duquerson/notifications-page-main.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Duquerson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duquerson/notifications-page-main/issues"
+  },
+  "homepage": "https://github.com/duquerson/notifications-page-main#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}
