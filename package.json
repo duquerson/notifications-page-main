@@ -4,8 +4,8 @@
   "description": "page of notifiations",
   "main": "index.js",
   "scripts": {
-    "css": "npx tailwindcss -i ./dist/input.css -o ./src/style.css --watch",
-    "css1": "npx tailwindcss -i ./dist/input.css -o ./src/style.css --minify",
+    "css": "sass ./dist/input.scss ./src/style.css --watch",
+    "css1": "sass ./dist/input.scss ./src/style.css  --style compressed",
     "html": "pug ./dist/index.pug -o ./src/ -w -P",
     "html1": "pug ./dist/index.pug -o ./src/ -w"
   },
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/duquerson/notifications-page-main#readme",
   "devDependencies": {
-    "tailwindcss": "^3.2.1"
+    "sass": "^1.56.1"
   }
 }

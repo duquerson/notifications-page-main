@@ -1,27 +1,22 @@
-const cards = document.querySelectorAll(".body_card-notifications");
-const mark = document.querySelector('#mark_all');
-const noticia = document.querySelector("#notifications");
+const card1 = document.querySelectorAll(".card_notification");
+const read = document.querySelector('.read_all');
+const number = document.querySelector('.notification_counter');
+let lista = [...card1];
 
 
-cards.forEach(card =>{
+lista.map(card =>{
     card.addEventListener('click', () => {
-        card.classList.remove('body_card-notifications');
-        card.classList.add('body_card');
-        const puntos = document.querySelector('.container_text-notification');
-        puntos.classList.remove('container_text-notification');
-        const newcards = document.querySelectorAll(".body_card-notifications");
-        noticia.innerText = newcards.length;
-        
+        card.classList.remove('card_notification');
+        card.classList.add('card');        
+        const card2 = document.querySelectorAll(".card_notification");
+        number.innerText = card2.length;
     });
 });
 
-mark.addEventListener('click', ()=>{
-    cards.forEach(card=>{
-        card.classList.remove('body_card-notifications');
-        card.classList.add('body_card');
-        const puntos = document.querySelector('.container_text-notification');
-        puntos.classList.remove('container_text-notification');
-        const newcards = document.querySelectorAll(".body_card-notifications");
-        noticia.innerText = newcards.length;
+read.addEventListener('click', ()=>{
+    lista.map(card=>{
+        card.classList.remove('card_notification');
+        card.classList.add('card');
     });
+    number.innerText = 0;
 });

@@ -23,15 +23,11 @@ module.exports = {
       
       /**altura personalizada */
       height:{
-        '90': '21rem',
-
+        '90': '52.5rem',
       },
-      spacing:{
-        '132': '8.61rem',
-        '142': '42%'
-      },
-      transitionDuration:{
-        '1500': '1500ms'
+      width:{
+        '90': '23.4375rem',
+        '91': '45.8125rem'
       },
     },
   },
