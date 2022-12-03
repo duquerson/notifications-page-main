@@ -34,7 +34,7 @@ Your users should be able to:
 ### Links
 
 - Solution: [here](https://github.com/duquerson/notifications-page-main)
-- Live Site: [here](https://vercel.com/duquerson/notifications-page-main)
+- Live Site: [here](https://notifications-page-main-puce.vercel.app/)
 ## My process
 
 ### Built with
